@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman Form Pendaftaran Akun - Praktikum HTML">
+    <meta name="keywords" content="Form Pendaftaran, Daftar Akun, HTML Murni, Praktikum">
+    <meta name="author" content="Praktikum PABWE">
+    <title>Form Pendaftaran Akun</title>
+</head>
+<body>
+
+    <!-- ===== NAVIGASI UTAMA (terhubung ke seluruh halaman proyek) ===== -->
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">Home</a>
+        &nbsp;|&nbsp;
+        <a href="blog.html">Dev Blogs</a>
+        &nbsp;|&nbsp;
+        <b>Form Pendaftaran</b>
+        &nbsp;|&nbsp;
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <hr>
+
+    <h1>Form Pendaftaran Akun</h1>
+
+    <hr>
+
+    <!-- ===== FORM PENDAFTARAN ===== -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Daftar Akun</legend>
+
+            <!-- Nama Lengkap -->
+            <p>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </p>
+
+            <hr>
+
+            <!-- Jenis Kelamin -->
+            <p>
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-laki" required>
+                <label for="lakiLaki">Laki-Laki</label>
+                &nbsp;&nbsp;
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </p>
+
+            <hr>
+
+            <!-- Tempat Lahir -->
+            <p>
+                <label for="tempatLahir">Tempat Lahir:</label>
+                <input type="text" id="tempatLahir" name="tempatLahir" required>
+            </p>
+
+            <hr>
+
+            <!-- Tanggal Lahir -->
+            <p>
+                <label for="tanggalLahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+            </p>
+
+            <hr>
+
+            <!-- Agama -->
+            <p>
+                <label for="agama">Agama:</label>
+                <select id="agama" name="agama" required>
+                    <option value="">--- Pilih Agama ---</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </p>
+
+            <hr>
+
+            <!-- Hobi -->
+            <p>
+                <label>Hobi:</label>
+                <input type="checkbox" id="hobiOlahraga" name="hobi" value="Olahraga">
+                <label for="hobiOlahraga">Olahraga</label>
+                &nbsp;&nbsp;
+                <input type="checkbox" id="hobiMembaca" name="hobi" value="Membaca">
+                <label for="hobiMembaca">Membaca</label>
+                &nbsp;&nbsp;
+                <input type="checkbox" id="hobiNgoding" name="hobi" value="Ngoding">
+                <label for="hobiNgoding">Ngoding</label>
+            </p>
+
+            <hr>
+
+            <!-- Password -->
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </p>
+
+            <hr>
+
+            <!-- Persetujuan -->
+            <p>
+                <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                <label for="persetujuan">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+            </p>
+
+            <!-- Tombol Aksi -->
+            <p>
+                <input type="reset" value="Reset">
+                &nbsp;&nbsp;
+                <input type="submit" value="Submit">
+            </p>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

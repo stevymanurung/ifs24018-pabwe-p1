@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman Detail Blog - Praktikum HTML">
+    <meta name="keywords" content="Dev Blogs, Docker, NGINX, HTML Murni, Praktikum">
+    <meta name="author" content="Praktikum PABWE">
+    <title>Detail Blog - How to Deploy a Web Application Using Docker and NGINX on Your Own Server</title>
+</head>
+<body>
+
+    <!-- ===== NAVIGASI UTAMA (halaman ini masih bagian dari Dev Blogs) ===== -->
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">Home</a>
+        &nbsp;|&nbsp;
+        <b>Dev Blogs</b>
+        &nbsp;|&nbsp;
+        <a href="form.html">Form Pendaftaran</a>
+        &nbsp;|&nbsp;
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <hr>
+
+    <!-- ===== COVER BLOG ===== -->
+    <img src="https://placehold.co/1000x400?text=Docker+%2B+NGINX" alt="Ilustrasi Docker dan NGINX" width="100%">
+
+    <!-- ===== INFORMASI PENULIS ===== -->
+    <p>
+        <img src="https://placehold.co/32x32?text=32x32" alt="Foto profil Vishnu Satheesh" width="32" height="32">
+        &nbsp;
+        <span><b>Vishnu Satheesh</b></span>
+        <br>
+        <span>Posted on May 31</span>
+    </p>
+
+    <!-- ===== JUDUL BLOG ===== -->
+    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+
+    <hr>
+
+    <!-- ===== ISI KONTEN BLOG ===== -->
+    <p>Menjalankan aplikasi web di server sendiri kadang terasa merepotkan, padahal dengan bantuan Docker dan NGINX prosesnya bisa jauh lebih sederhana. Kombinasi keduanya memungkinkan aplikasi berjalan konsisten di lingkungan mana pun sekaligus tetap mudah diakses lewat domain milik kita sendiri. Panduan ini ditulis dengan asumsi server yang digunakan berbasis Linux.</p>
+
+    <h3>Step 1: Setup Docker</h3>
+    <p>Langkah pertama adalah menyiapkan Docker di server. Contoh berikut menggunakan aplikasi Node.js sederhana, namun caranya bisa disesuaikan dengan bahasa atau framework apa pun. Buat sebuah Dockerfile di root proyek yang isinya menentukan base image Node, direktori kerja, proses instalasi dependency, penyalinan seluruh file proyek, hingga perintah untuk menjalankan aplikasi.</p>
+
+    <h3>Step 2: Build and Run the Docker Container</h3>
+    <p>Setelah Dockerfile siap, langkah berikutnya adalah membangun image dan menjalankannya sebagai container di server. Setelah container berjalan, NGINX dapat diatur sebagai reverse proxy untuk meneruskan trafik dari domain menuju port aplikasi di dalam container tersebut.</p>
+
+    <h3>Kesimpulan</h3>
+    <p>Sekilas proses ini terlihat rumit, namun begitu dipecah menjadi beberapa tahap, deployment aplikasi menggunakan Docker dan NGINX sebenarnya cukup mudah diikuti. Dengan mengemas aplikasi ke dalam container dan menempatkan NGINX di depannya sebagai reverse proxy, kita mendapatkan kendali penuh atas proses deployment di server sendiri.</p>
+
+    <hr>
+
+    <!-- ===== SEKSI KOMENTAR ===== -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <td>
+                <img src="https://placehold.co/32x32?text=32x32" alt="Foto profil pengguna" width="32" height="32">
+            </td>
+            <td>
+                <label for="komentar">Tulis Komentar</label>
+                <br>
+                <textarea id="komentar" name="komentar" rows="3" cols="50" placeholder="Add to the discussion"></textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
