@@ -16,6 +16,8 @@
         &nbsp;|&nbsp;
         <a href="blog.html">Dev Blogs</a>
         &nbsp;|&nbsp;
+        <a href="blog-detail.html">Detail Blog</a>
+        &nbsp;|&nbsp;
         <a href="form.html">Form Pendaftaran</a>
         &nbsp;|&nbsp;
         <a href="cv.html">CV</a>
@@ -35,68 +37,58 @@
     <!-- ===== KONTEN: DAFTAR 3 FILM ===== -->
     <h2>Daftar Film</h2>
 
-    <!-- Film 1 -->
     <table border="0" cellpadding="8" cellspacing="0">
-        <tr>
-            <td>
-                <img src="The Shawshank Redemption.jpg" alt="Cover film The Shawshank Redemption" width="72" height="107">
-            </td>
-            <td>
-                <h3>1. The Shawshank Redemption</h3>
-                <p>
-                    <span>1994</span>
-                    &nbsp;&nbsp;
-                    <span>2h 22m</span>
-                    &nbsp;&nbsp;
-                    <span>15</span>
-                </p>
-                <p><span>Rating: 9.3 (3.1M)</span></p>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <!-- Film 2 -->
-    <table border="0" cellpadding="8" cellspacing="0">
-        <tr>
-            <td>
-                <img src="The Godfather.jpg" alt="Cover film The Godfather" width="72" height="107">
-            </td>
-            <td>
-                <h3>2. The Godfather</h3>
-                <p>
-                    <span>1972</span>
-                    &nbsp;&nbsp;
-                    <span>2h 55m</span>
-                    &nbsp;&nbsp;
-                    <span>15</span>
-                </p>
-                <p><span>Rating: 9.2 (2.1M)</span></p>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <!-- Film 3 -->
-    <table border="0" cellpadding="8" cellspacing="0">
-        <tr>
-            <td>
-                <img src="The Dark Knight.jpg" alt="Cover film The Dark Knight" width="72" height="107">
-            </td>
-            <td>
-                <h3>3. The Dark Knight</h3>
-                <p>
-                    <span>2008</span>
-                    &nbsp;&nbsp;
-                    <span>2h 32m</span>
-                    &nbsp;&nbsp;
-                    <span>12A</span>
-                </p>
-                <p><span>Rating: 9.3 (3.1M)</span></p>
-            </td>
-        </tr>
+        <caption>Daftar 3 Film Teratas IMDb</caption>
+        <thead>
+            <tr>
+                <th scope="col">Cover</th>
+                <th scope="col">Informasi Film</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="The Shawshank Redemption.jpg" alt="Cover film The Shawshank Redemption" width="72" height="107"></td>
+                <td>
+                    <h3>1. The Shawshank Redemption</h3>
+                    <p>
+                        <span>1994</span>
+                        &nbsp;&nbsp;
+                        <span>2h 22m</span>
+                        &nbsp;&nbsp;
+                        <span>15</span>
+                    </p>
+                    <p><span>Rating: 9.3 (3.1M)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABrCAIAAABbt1OIAAADK0lEQVR42u3bz0vjQBQH8JnGVMGDRYrVEBQJpiGoIbdK25P1JlIovQj+Xx689qAiKhUErT+wFnPwdzxIaSqKVASpBSWatDF7CMhS3UXEZXfl+04P5g3h897M3EI1TSPfMXzkmwZggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEG2H8Pu7+/Pzg4sG3734WdnZ3Nzs7Oz88vLy8/Pj7+vnh6etpLVlZWWlpaKKVNBfv7+02Vfwd2dXVlGEY6nU6n0zzP53K5D240TVNRFJZlfwX7Q9HywbrDw8ORkRGfz0cIGRoaurm5cV336elpfX29Xq+zLDs2NkYI2djYsCyro6PD26Xrum3bCwsLsVhsZ2fHtm1ZllVV1TStXq8vLS0lk0lCyN7eXqVSeX5+jkQigiBYlrW9vW2apuM48Xg8FAp5gxUEoaurS1GUr4RVq9VgMOjlfr9/fHycEJLP58PhsCRJ5+fn+XyeUiqKYjgcNgyjWCx6LSgUCqlUamtrKxqNdnZ2ZjIZVVUjkcjx8bGnchynra0tlUrVarXFxUVBEHZ3dxVF6e7ufnh4yGazk5OTXpkoin19fV88sZeXFy85Ojoql8umaU5NTV1fXycSCULIwMBAoVCglI6OjhJC+vv7my5VNBotFosXFxfvviKyLBNCAoGAZVmEkMvLy1qt5i01Gg3XdSmlPp+vt7f3649iIBC4u7sLhUKqqsqyPDMz87bGcRwvcV23aWl1dVUQBEVRdF1vWmIYprW1tamJyWSSYRjXdSuVitcjSunbF+gLHo/BwUFN07y5nZ6eepeN5/lSqUQIKZVKPM9zHFculwkhhmE02W5vb0VRbDQar/h3/V5wHGcYhje6T78xH52YJEnVajWTybS3t0uS5DUvFovlcjld11mWTSQSjuOsra2dnJz09PQwDPPz9uHh4bm5uWAw6Pf7HcdhGIbjuGw2OzEx8fZb8Xh8c3NT1/XXs/2JoPgFBDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAPvD8QPbv0HTflCqBgAAAABJRU5ErkJggg==" alt="Cover film The Godfather" width="72" height="107"></td>
+                <td>
+                    <h3>2. The Godfather</h3>
+                    <p>
+                        <span>1972</span>
+                        &nbsp;&nbsp;
+                        <span>2h 55m</span>
+                        &nbsp;&nbsp;
+                        <span>15</span>
+                    </p>
+                    <p><span>Rating: 9.2 (2.1M)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABrCAIAAABbt1OIAAADN0lEQVR42u3ay0rzQBgG4JkmqSKiQiIVKYJEI9ZDkC4s1CJdCIIbIRW8AvGKpDdQhKogdNFCUYoHLOIp6lZxIcUgKahQjXHivyiE4hFR/9ryfqsc3kl5OplhBkLz+Typx/KQOi3AAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwACravHfbL+wsODz+SiljLHBwcH+/v6P8/F4fH5+vgZgHo9H0zRCiG3bqVSK5/ne3t66ehUFQRgbGzs6OjJNc2lpKZFIHB4eur2UzWZ1XXfD9/f3iUTCNM3aGGOSJN3c3BwfH4fDYU3TDg4OytcZY4qiqKrqnqbT6fHxcVEUawPmOI7H4wmHw8VicX9///Hx0X1du7q63Fgul+vr6/P7/TUzKxqGIYpiOp0mhKiqSiktX6eUuseMMdM0r66uamaMWZa1vb0dDAYNw1AU5enpiTH2OsZx3MzMzO3t7enp6Z+eFR3HWVlZKU/3wWDQ7/cPDw8nk0lJkrxeL2OM47gXTSilk5OTyWSyvb3d5/P9Eozi01nAAAMMsB+ExePx8sHd3d3i4mKpVHqdMU3z5OTk0ydU1t7e3p/oMcZYJpOJRqNNTU2v74qiODQ09KUHfh/G/whsfX09EAh0dHSUe0BV1UKhYFnW6OioLMvuNqxUKq2trVmW1dLScnFxMTc3V26+s7NTKBQeHh5CoZAsy/l83rbt1dXV6enpavaYruscxw0MDLhrkcbGRk3TpqamNjY2KpNbW1uKosRiMVmWbdt2e/tFPhQKCYLwHdUPwBzH0XW9cmg9Pz8HAgFCSGtrq2VZleHLy8uenh5CSHd3t7ssJoSU821tbS/y1YRRSmdnZ23bdqcHjuMaGhreG4ouvnJZ/F6+yjCv1zsxMbG7u1ssFj8Od3Z2np+fE0LOzs4qbW/Wp4H/MSs2NzdHIpFMJvPmVsWtSCSi6/ry8vL19bUgCB//BalUqmZW99lsdmRkRJIkwzA2Nzdjsdjf3Y99qVRVzeVyPM87jhONRn/1t7AfAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAKuN+geB7kMPw4ZR+AAAAABJRU5ErkJggg==" alt="Cover film The Dark Knight" width="72" height="107"></td>
+                <td>
+                    <h3>3. The Dark Knight</h3>
+                    <p>
+                        <span>2008</span>
+                        &nbsp;&nbsp;
+                        <span>2h 32m</span>
+                        &nbsp;&nbsp;
+                        <span>12A</span>
+                    </p>
+                    <p><span>Rating: 9.3 (3.1M)</span></p>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
     </main>
